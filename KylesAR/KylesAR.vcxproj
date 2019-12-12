@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\behavior.h" />
+    <ClInclude Include="app\i_SceneObj.h" />
+    <ClInclude Include="app\i_ocfb.h" />
+    <ClInclude Include="dev\i_Camera.h" />
+    <ClInclude Include="dewarp.hpp" />
+    <ClInclude Include="dsp.h" />
+    <ClInclude Include="experiments\dans.h" />
+    <ClInclude Include="experiments\depthCalib.h" />
+    <ClInclude Include="experiments\freespace.h" />
+    <ClInclude Include="experiments\ibl.h" />
+    <ClInclude Include="experiments\knft.h" />
+    <ClInclude Include="experiments\parallaxSFM.h" />
+    <ClInclude Include="experiments\planeDetection.h" />
+    <ClInclude Include="experiments\readpatt.h" />
+    <ClInclude Include="experiments\recon.h" />
+    <ClInclude Include="experiments\reprojection.h" />
+    <ClInclude Include="experiments\SLAM.h" />
+    <ClInclude Include="experiments\CoSLAM.h" />
+    <ClInclude Include="experiments\testUI.h" />
+    <ClInclude Include="ext\i_tracker.h" />
+    <ClInclude Include="module.hpp" />
+    <ClInclude Include="experiments\netclient.h" />
+    <ClInclude Include="experiments\neural.h" />
+    <ClInclude Include="rectExt.h" />
+    <ClInclude Include="cpudraw.h" />
+    <ClInclude Include="kibblesmath.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="sandbox.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="tracking.h" />
+    <ClInclude Include="winderps.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\i_ocfb.cpp" />
+    <ClCompile Include="dsp.cpp" />
+    <ClCompile Include="experiments\CoSLAM.cpp" />
+    <ClCompile Include="experiments\dans.cpp" />
+    <ClCompile Include="experiments\depthCalib.cpp" />
+    <ClCompile Include="experiments\freespace.cpp" />
+    <ClCompile Include="experiments\ibl.cpp" />
+    <ClCompile Include="experiments\knft.cpp" />
+    <ClCompile Include="experiments\parallaxSFM.cpp" />
+    <ClCompile Include="experiments\planeDetection.cpp" />
+    <ClCompile Include="experiments\recon.cpp" />
+    <ClCompile Include="experiments\reprojection.cpp" />
+    <ClCompile Include="experiments\SLAM.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="experiments\netclient.cpp" />
+    <ClCompile Include="experiments\neural.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="sandbox.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="tracking.cpp" />
+    <ClCompile Include="winderps.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0185A783-3528-4DB9-A606-8139C4B8F251}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>KylesAR</RootNamespace>
+    <ProjectName>KylesAR</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\3rdparty\OpenCV\include;$(SolutionDir)..\..\3rdparty\CUDA\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\3rdparty\OpenCV\lib;$(SolutionDir)..\..\3rdparty\CUDA\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\3rdparty\glfw\include;$(SolutionDir)..\..\3rdparty\glew\include;$(SolutionDir)..\..\3rdparty\OpenCV\include;$(SolutionDir)..\..\3rdparty\glm</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\3rdparty\OpenCV\lib;$(SolutionDir)..\..\3rdparty\glfw\libvc2015;$(SolutionDir)..\..\3rdparty\glew\lib\Release\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)..\3rdparty\OpenCV\lib;$(SolutionDir)..\3rdparty\glfw\libvc2015;$(SolutionDir)..\3rdparty\glew\lib\Release\x64;$(SolutionDir)..\3rdparty\libevent\lib;$(SolutionDir)..\3rdparty\ZeroMQ\lib;$(SolutionDir)..\3rdparty\tobii\lib\x64;$(SolutionDir)..\3rdparty\CryptoPP\lib;C:\Program Files (x86)\Intel RealSense SDK 2.0\lib\x64;$(SolutionDir)..\3rdparty\libfreespace\lib;C:\WinDDK\7600.16385.1\lib\win7\amd64;$(SolutionDir)..\3rdparty\pthread\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\3rdparty\glfw\include;$(SolutionDir)..\3rdparty\glew\include;$(SolutionDir)..\3rdparty\OpenCV\include;$(SolutionDir)..\3rdparty\glm;$(SolutionDir)..\3rdparty\libevent\include;$(SolutionDir)..\3rdparty\ZeroMQ\include;$(SolutionDir)..\3rdparty\tobii\include;$(SolutionDir)..\3rdparty\CryptoPP\include;C:\Program Files (x86)\Intel RealSense SDK 2.0\include;$(SolutionDir)..\3rdparty\libfreespace\include;$(ProjectDir);$(SolutionDir)..\3rdparty\pthread\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_videostab300.lib;opencv_calib3d300.lib;opencv_core300.lib;opencv_cudaarithm300.lib;opencv_cudabgsegm300.lib;opencv_cudacodec300.lib;opencv_cudafeatures2d300.lib;opencv_cudafilters300.lib;opencv_cudaimgproc300.lib;opencv_cudalegacy300.lib;opencv_cudaobjdetect300.lib;opencv_cudaoptflow300.lib;opencv_cudastereo300.lib;opencv_cudawarping300.lib;opencv_cudev300.lib;opencv_features2d300.lib;opencv_flann300.lib;opencv_hal300.lib;opencv_highgui300.lib;opencv_imgcodecs300.lib;opencv_imgproc300.lib;opencv_ml300.lib;opencv_objdetect300.lib;opencv_photo300.lib;opencv_shape300.lib;opencv_stitching300.lib;opencv_superres300.lib;opencv_ts300.lib;opencv_video300.lib;opencv_videoio300.lib;cuda.lib;cudadevrt.lib;cudart.lib;cudart_static.lib;nvcuvid.lib;OpenCL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_calib3d300.lib;opencv_core300.lib;opencv_features2d300.lib;opencv_flann300.lib;opencv_hal300.lib;opencv_highgui300.lib;opencv_imgcodecs300.lib;opencv_imgproc300.lib;opencv_ml300.lib;opencv_objdetect300.lib;opencv_photo300.lib;opencv_shape300.lib;opencv_stitching300.lib;opencv_superres300.lib;opencv_ts300.lib;opencv_video300.lib;opencv_videoio300.lib;opencv_videostab300.lib;glu32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;opencv_world341.lib;Tobii.EyeX.Client.lib;Shcore.lib;Winmm.lib;IPHLPAPI.lib;libzmq-v120-mt-4_0_4.lib;legacy_stdio_definitions.lib;realsense2.lib;libfreespace.lib;hid.lib;setupapi.lib;event.lib;Ws2_32.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(MSBuildProjectDirectory)\glsl\*.*" "$(SolutionDir)x64\Release\glsl" /Y
+xcopy "$(MSBuildProjectDirectory)\images\*.*" "$(SolutionDir)x64\Release\images" /Y
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

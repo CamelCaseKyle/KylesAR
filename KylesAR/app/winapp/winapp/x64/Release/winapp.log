@@ -1,0 +1,31 @@
+﻿Build started 1/20/2018 2:45:02 AM.
+     1>Project "D:\Programming\KylesAR\KylesAR\app\winapp\winapp\winapp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D WINAPP_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\winapp.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt winapp.cpp
+         winapp.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.dll" /INCREMENTAL:NO /NOLOGO opengl32.lib glu32.lib glew32.lib glfw3.lib opencv_highgui330.lib opencv_features2d330.lib opencv_imgproc330.lib opencv_core330.lib KylesAR.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.lib" /MACHINE:X64 /DLL x64\Release\dllmain.obj
+         x64\Release\stdafx.obj
+         x64\Release\winapp.obj
+            Creating library D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.lib and object D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.exp
+         Generating code
+         Finished generating code
+         winapp.vcxproj -> D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.dll
+       PostBuildEvent:
+         copy "D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.dll" "D:\Programming\KylesAR\KylesAR\app\winapp\..\..\..\x64\Release\app\Winapp\x64\Release" /Y
+         copy "D:\Programming\KylesAR\KylesAR\app\winapp\x64\Release\winapp.cfg" "D:\Programming\KylesAR\KylesAR\app\winapp\..\..\..\x64\Release\app\Winapp\x64\Release" /Y
+         xcopy "D:\Programming\KylesAR\KylesAR\app\winapp\winapp\glsl\*.*" "D:\Programming\KylesAR\KylesAR\app\winapp\..\..\..\x64\Release\app\Winapp\x64\Release\glsl" /Y
+         
+         :VCEnd
+                 1 file(s) copied.
+                 1 file(s) copied.
+         D:\Programming\KylesAR\KylesAR\app\winapp\winapp\glsl\winapp.depth.frag
+         D:\Programming\KylesAR\KylesAR\app\winapp\winapp\glsl\winapp.depth.vert
+         D:\Programming\KylesAR\KylesAR\app\winapp\winapp\glsl\winapp.frag
+         D:\Programming\KylesAR\KylesAR\app\winapp\winapp\glsl\winapp.vert
+         4 File(s) copied
+     1>Done Building Project "D:\Programming\KylesAR\KylesAR\app\winapp\winapp\winapp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.52

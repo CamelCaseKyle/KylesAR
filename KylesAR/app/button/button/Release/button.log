@@ -1,0 +1,3 @@
+﻿  stdafx.cpp
+  button.cpp
+c:\programming\kylesar\kylesar\app\button\button\button.h(19): fatal error C1083: Cannot open include file: 'opencv2\core.hpp': No such file or directory

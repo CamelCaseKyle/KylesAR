@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  hexmarker.cpp
+c:\programming\kylesar\kylesar\ext\hexmarker\hexmarker\hexmarker.h(51): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\programming\kylesar\kylesar\ext\hexmarker\hexmarker\hexmarker.cpp(321): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\programming\kylesar\kylesar\ext\hexmarker\hexmarker\hexmarker.cpp(178): warning C4101: 'len': unreferenced local variable
+c:\programming\kylesar\kylesar\ext\hexmarker\hexmarker\hexmarker.cpp(178): warning C4101: 'len2': unreferenced local variable
+     Creating library C:\Programming\KylesAR\KylesAR\ext\Hexmarker\x64\Release\Hexmarker.lib and object C:\Programming\KylesAR\KylesAR\ext\Hexmarker\x64\Release\Hexmarker.exp
+  Generating code
+  All 1085 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  hexmarker.vcxproj -> C:\Programming\KylesAR\KylesAR\ext\Hexmarker\x64\Release\Hexmarker.dll
+          1 file(s) copied.
+          1 file(s) copied.

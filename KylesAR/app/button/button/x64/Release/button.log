@@ -1,0 +1,27 @@
+﻿  stdafx.cpp
+  button.cpp
+c:\programming\kylesar\kylesar\posefilter.hpp(65): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\programming\kylesar\kylesar\posefilter.hpp(117): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\programming\kylesar\kylesar\posefilter.hpp(132): warning C4244: 'initializing': conversion from '__int64' to 'float', possible loss of data
+c:\programming\kylesar\kylesar\module.hpp(180): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\programming\kylesar\kylesar\app\button\button\button.cpp(44): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+  dllmain.cpp
+     Creating library C:\Programming\KylesAR\KylesAR\app\button\x64\Release\button.lib and object C:\Programming\KylesAR\KylesAR\app\button\x64\Release\button.exp
+  Generating code
+  All 1263 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  button.vcxproj -> C:\Programming\KylesAR\KylesAR\app\button\x64\Release\button.dll
+          1 file(s) copied.
+          1 file(s) copied.
+  C:\Programming\KylesAR\KylesAR\app\button\button\glsl\button.frag
+  C:\Programming\KylesAR\KylesAR\app\button\button\glsl\button.vert
+  2 File(s) copied
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button1a.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button1i.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button2a.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button2i.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button_b_a.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button_b_i.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button_g_a.png
+  C:\Programming\KylesAR\KylesAR\app\button\button\images\button_g_i.png
+  8 File(s) copied

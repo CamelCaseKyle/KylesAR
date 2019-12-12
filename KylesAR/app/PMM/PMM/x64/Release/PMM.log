@@ -1,0 +1,22 @@
+﻿Build started 11/10/2017 5:21:22 PM.
+     1>Project "F:\Programming\KylesAR\KylesAR\app\PMM\PMM\PMM.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PMM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Release\PMM.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PMM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PMM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\PMM.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt PMM.cpp
+         PMM.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Programming\KylesAR\KylesAR\app\PMM\x64\Release\PMM.dll" /INCREMENTAL:NO /NOLOGO opencv_core330.lib opencv_highgui330.lib opencv_features2d330.lib opencv_imgproc330.lib opencv_imgcodecs330.lib glfw3.lib opengl32.lib glew32.lib KylesAR.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Programming\KylesAR\KylesAR\app\PMM\x64\Release\PMM.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Programming\KylesAR\KylesAR\app\PMM\x64\Release\PMM.lib" /MACHINE:X64 /DLL x64\Release\dllmain.obj
+         x64\Release\PMM.obj
+         x64\Release\stdafx.obj
+            Creating library F:\Programming\KylesAR\KylesAR\app\PMM\x64\Release\PMM.lib and object F:\Programming\KylesAR\KylesAR\app\PMM\x64\Release\PMM.exp
+         Generating code
+         Finished generating code
+         PMM.vcxproj -> F:\Programming\KylesAR\KylesAR\app\PMM\x64\Release\PMM.dll
+     1>Done Building Project "F:\Programming\KylesAR\KylesAR\app\PMM\PMM\PMM.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.99

@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  d435.cpp
+  dllmain.cpp
+     Creating library C:\Programming\KylesAR\KylesAR\dev\d435\x64\Release\d435.lib and object C:\Programming\KylesAR\KylesAR\dev\d435\x64\Release\d435.exp
+  Generating code
+  All 497 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  d435.vcxproj -> C:\Programming\KylesAR\KylesAR\dev\d435\x64\Release\d435.dll
+          1 file(s) copied.
+          1 file(s) copied.
