@@ -89,7 +89,7 @@ reality c137 (scene)
 #define TRACK
 #ifdef TRACK
 #include "experiments\knft.h"
-#define FeatureCloudFile "models\\galaxy.ftcloud"
+#define FeatureCloudFile1 "models\\room.ftcloud"
 #endif
 
 //#define REPROJ
@@ -149,7 +149,15 @@ int main(int argc, char *argv[]) {
 		// my sparse feature NFT
 		KylesNFT knft(icam);
 		printf("load ft cloud\n");
-		knft.loadFtCloud(FeatureCloudFile);
+	#ifdef FeatureCloudFile1
+		knft.loadFtCloud(FeatureCloudFile1);
+	#endif
+	#ifdef FeatureCloudFile2
+		knft.loadFtCloud(FeatureCloudFile2);
+	#endif
+	#ifdef FeatureCloudFile3
+		knft.loadFtCloud(FeatureCloudFile3);
+	#endif
 		printf("done\n");
 #endif
 #ifdef KITTI_SLAM

@@ -19,20 +19,29 @@ bool KylesNFT::loadFtCloud(string path) {
 	for (int i = 1; i <= npts; i++) {
 		fields = split(lines[i], " ");
 		float x = std::stof(fields[0]),
-			y = std::stof(fields[1]),
-			z = std::stof(fields[2]);
+			  y = std::stof(fields[1]),
+			  z = std::stof(fields[2]);
 		ftCloud.push_back(cv::Point3f(x, y, z));
 	}
 
 	// now for the descriptors
 	int end = npts * 2, width = split(lines[npts + 1], " ").size();
-	fdesc = cv::Mat::zeros(npts, width, CV_8UC1);
+	cv::Mat new_fdesc = cv::Mat::zeros(npts, width, CV_8UC1);
 	for (int i = npts + 1; i < lines.size(); i++) {
 		fields = split(lines[i], " ");
 		for (int j = 0; j < width; j++) {
 			int num = std::stoi(fields[j]);
-			fdesc.at<uchar>(i - npts - 1, j) = num;
+			new_fdesc.at<uchar>(i - npts - 1, j) = num;
 		}
+	}
+
+	// check if fdesc exists
+	if (fdesc.empty()) {
+		fdesc = new_fdesc;
+	} else {
+		// merge with fdesc
+		std::vector<cv::Mat> mats = { fdesc, new_fdesc };
+		cv::vconcat(mats, fdesc);
 	}
 }
 
@@ -107,10 +116,11 @@ bool KylesNFT::getMatrix() {
 		return false;
 
 	float error = reprojError(inliers);
+	bool badreproj = (error > maxReprojError) || (error < 0.01f);
+	
+	if (!badreproj) printf("reproj %fpx\n", error);
 
-	if (error < maxReprojError) printf("reproj %fpx\n", error);
-
-	return error < maxReprojError;
+	return !badreproj;
 }
 
 //draw debug information

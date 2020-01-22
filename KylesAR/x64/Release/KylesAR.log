@@ -1,10 +1,4 @@
-﻿  knft.cpp
-  Generating code
-  0 of 3043 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  KylesAR.vcxproj -> C:\Programming\KylesAR\x64\Release\KylesAR.exe
+﻿  KylesAR.vcxproj -> C:\Programming\KylesAR\x64\Release\KylesAR.exe
   C:\Programming\KylesAR\KylesAR\glsl\occlusion.feedback.frag
   C:\Programming\KylesAR\KylesAR\glsl\occlusion.feedback.vert
   2 File(s) copied

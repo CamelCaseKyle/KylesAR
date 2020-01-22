@@ -29,17 +29,17 @@ public:
 	cv::Ptr<cv::BFMatcher> bfm = cv::Ptr<cv::BFMatcher>(new cv::BFMatcher(cv::NORM_HAMMING, false));
 	Feats cfts;
 	// feature significance threshold (auto optimized)
-	float thresh = 0.01f;
+	float thresh = 0.005f;
 	// Ratio of highest to 2nd highest hamming distance to be considered a certain match (auto optimized)
-	float nnMatchRatio = 0.7f;
+	float nnMatchRatio = 0.5f;
 	// percentage of matches from a cloud to be considered a success
-	float matchPercentage = 20.0f;
+	float matchPercentage = 5.0f;
 	// minimum number of matches to care
 	int targetKeypoints = 200;
 	// percentage of inliers during pose recovery to be considered a success
-	float inlierPercentage = 20.0f;
+	float inlierPercentage = 5.0f;
 	// maximum error in pixels
-	float maxReprojError = 1.0f;
+	float maxReprojError = 2.0f;
 	// how far away from the object we should care about
 	float znear, zfar;
 	// current step quality
