@@ -1,54 +1,95 @@
+![kibblesAR](https://user-images.githubusercontent.com/19864858/164949009-5fa570a4-547e-4819-a02c-f74fc1ccf5fd.jpg)
+
 Old YouTube videos: https://youtube.com/playlist?list=PLKdRBHTpsOSBgkMJFtvumOGwBd91xSBhG
 
 This program started life as an optical tracking algorithm that now lives in Tracking/Fiducial.cpp
 
 Now it can do a few things:
 	- interact with a few user controls like buttons and a handheld remote
+	
 	- supports generic cameras, special Intel R200 support
+	
 	- fuse multiple tracking algorithms
+	
 	- manage augmented objects with bindings
+	
 	- utilize RGBD data for occlusion and occlusion feedback
+	
 	- launch and interact with Windows programs
+	
 	- dewarp and render to actual see-through AR glasses
+	
 	- track the user's eyes for intense immersion
 
 reality
+
 	augmented
+	
 	|	objects
+	
 	|	|	contnet
+	
 	|	|	regions
+	
 	|	|	surfaces
+	
 	|	|	poses
+	
 	|		|	landmark
+	
 	|		|	input
+	
 	|		|	user
+	
 	real
+	
 	|	mesh
+	
 	|	weather, time, global location etc
+	
 	|	computer
+	
 	|	|	glasses
+	
 	|		|	display
-	|		|	r200
+	
+	|		|	input device
 
 reality/augmented/objects/content must be bound in one of these ways
 
-HUD	-	- content is put on a flat, fullscreen overlay using no tracking of any kind
-PARENT	-	- content is attached to a parent object in the real world
-WORLD	-	- content exists in the world independant of other objects
-PERSONAL	- content floats within reach using a fusion of Compass/IMU/Optical
-PURGATORY	- content is not drawn or updated (usually used with WAIT)
+	HUD	-	- content is put on a flat, fullscreen overlay using no tracking of any kind
+
+	PARENT	-	- content is attached to a parent object in the real world
+
+	WORLD	-	- content exists in the world independant of other objects
+
+	PERSONAL	- content floats within reach using a fusion of Compass/IMU/Optical
+
+	PURGATORY	- content is not drawn or updated (usually used with WAIT)
 
 Main classes:
 	Context	-	-	- Rendering context with built in shaders and passes
+	
 	Fiducial	-	- Fiducial marker tracking service
+	
 	HandheldInput	-	- Simple input device
+	
 	LightTracker	-	- Template for a light tracking service
+	
 	PerceptionTracker	- A wrapper class around the R200 scene perception
+	
 	PositionTracker	-	- Template for a position tracking service
+	
 	R200	-	-	- Specific Intel Realsense R200 implementation
+	
 	Scene	-	-	- Holds objects and poses
+	
 	SceneObject	-	- Template for augmented objects in scene
+	
 	Shader	-	-	- A set of .vert .geo .frag shader source files
+	
 	TouchInput	-	- Uses occlusion feedback to implement multitouch
+	
 	TrackingService	-	- Puts all trackers together and does fusion
+	
 	WindowsIntegration	- Supports sending messages and grabbing screenbuffer
